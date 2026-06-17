@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
+
+    <title>LeadBid — Name your price. Pros compete.</title>
+    <meta name="description" content="LeadBid is a local-services marketplace where customers name their price and nearby businesses compete to win the job." />
+
+    <!-- Theme + PWA -->
+    <meta name="theme-color" content="#fb5a2d" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- iOS: launch full-screen like a native app from the Home Screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="LeadBid" />
+
+    <!-- Preload fonts used by the app for a fast first paint -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <style>
+      html, body, #root { height: 100%; margin: 0; background: #f5efe3; }
+      /* respect iPhone notch / home indicator */
+      body { padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
